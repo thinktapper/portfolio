@@ -2982,6 +2982,8 @@ height: auto;
 	transition: all .4s linear;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .bin {
@@ -3163,6 +3165,10 @@ height: auto;
 
 			html, body {
 				min-width: 320px;
+			}
+
+			.bin.back p {
+				display: inline-block;
 			}
 
 		/* List */
